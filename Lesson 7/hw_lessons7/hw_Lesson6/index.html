@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomeWork Lesson6</title>
+    </head>
+    <body>
+        <h2>Example result</h2>
+        <img src="media/photo.jpeg" alt="photo-example-result"> 
+        <h1><center>HomeWork Completed</center></h1>
+        <h1>Hire me</h1>
+        <h3>Contact information</h3>
+        <table border="3">
+            <tr>
+                <th>Phone</th>
+                <td>+38000000000</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Somewhere in Ukraine</td>
+            </tr>
+        </table>
+
+        <form>
+            <fieldset style="width: 600px; height: 200px;">
+                <legend>Contact form</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="email">
+                            E-mail<sup style="color: red;">*</sup>:
+                            </label>
+                        </td>
+                        <td><input type="text" name="email" id="email" minlength="5" maxlength="50" size="31" autofocus required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="description">Description:</label></td>
+                        <td><textarea id="description" rows="5" cols="30"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td>Work type:</td>
+                        <td>
+                            <select name="work-type">
+                                <option value="full-time">Full-time</option>
+                                <option value="one-time project">One-time project</option>
+                                <option value="remote work">Remote work</option>
+                                <option value="work-in-the-office">Work in the office</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                
+                <input type="submit" value="Hire me" name="hire-me">
+            </fieldset>
+        </form>
+    </body>
+</html>
