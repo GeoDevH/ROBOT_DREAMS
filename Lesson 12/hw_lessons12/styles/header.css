@@ -1,0 +1,60 @@
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+header img {
+    height: 50px;
+    width: 70px;
+    margin: 10px 350px;
+}
+
+.work_hours p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.work_address p {
+    margin: 5px 0 10px;
+    width: 220px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+}
+ 
+nav {
+    height: 122px;
+    width: 100%;
+    margin-top: 70px;
+    background: linear-gradient(180deg, #999999 0%, rgba(207, 207, 207, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(0,0,0);
+    border-bottom: 2px solid rgb(0,0,0);
+    font-family: ShutterBotton;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 32px;
+    padding: 2px 102px;
+}
+
+nav a:hover {
+    background: rgb(240, 240, 240);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 2px 100px;
+    cursor: revert;
+}
+
+nav a:nth-child(2) {
+    margin: 0 175px;
+} 
