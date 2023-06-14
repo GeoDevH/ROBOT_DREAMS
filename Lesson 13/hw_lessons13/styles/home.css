@@ -1,0 +1,66 @@
+.main_photo {
+    display: flex;
+    justify-content: center;
+    margin: 28px;
+}
+
+.main_photo img {
+    width: 421px;
+    height: 466px;
+    border: 2px solid rgb(0,0,0);
+    border-radius: 67px;
+    filter: drop-shadow(-38px 38px 50px rgba(0, 0, 0, 0.58));
+}
+
+.main_photo img:nth-child(2) {
+    margin: 0 207px;
+}
+
+.main_text {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 10px 0 60px;
+    font-family: RibeyeMarrow;
+}
+ 
+.main_text a:nth-child(2) {
+    margin: 0px 425px 0px 465px;
+}
+
+.main_text a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.main_text a:hover {
+    text-decoration: underline;
+}
+
+.bottom_novelty {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom_novelty div {
+    height: 76px;
+    width: 287px;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(66, 62, 62, 0.21) 0%, rgba(66, 62, 62, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.bottom_novelty div a {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+.bottom_novelty div a:hover {
+    background: rgb(240, 240, 240);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 18px 90px;
+    cursor: revert;
+} 
