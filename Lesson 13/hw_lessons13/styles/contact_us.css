@@ -1,6 +1,7 @@
 main {
     width: 1024px;
-    margin: auto;
+    position: relative;
+    left: 23%;
 }
 
 main h1 {
