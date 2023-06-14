@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomeWork Lesson13</title>
+        <link href="styles/header.css" rel="stylesheet" type="text/css">
+        <link href="styles/general.css" rel="stylesheet" type="text/css">
+        <link href="styles/contact_us.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="work_hours">
+                <p>Mon-Fri: 08:00 - 20:00</p>
+                <p>Sat-Sun: 09:00 - 16:00</p>
+            </div>
+            <img src="img/logo.ico.png" alt="logo.icon">
+            <div class="work_address">
+                <p>St. 17 Antonovycha St., Kyiv, Ukraine 02000</p>
+            </div>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Gallery</a>
+            <a href="contact_us.html">Contact us</a>
+        </nav>
+        <main>
+            <h1>Contact us</h1>
+            <div class="contact_info">
+                <div class="contact_phone">
+                    <span>Phone:</span>
+                    <p>+38-(093)-111-111</p>
+                </div>
+                <div class="contact_address">
+                    <span>Address:</span>
+                    <p>St. 17 Antonovycha St., Kyiv, Ukraine 02000</p>
+                </div>
+            </div>
+            <div class="address_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20318.41639754244!2d30.481045053923527!3d50.46341072617484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d2149c2d56a3%3A0x52569b75a3ddb6b0!2sStaff!5e0!3m2!1sru!2sua!4v1686222866668!5m2!1sru!2sua" width="1024" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <h2>LeAVe A ReVIeW</h2>
+            <form>
+                <label for="first_name">first Name</label>
+                <input type="text" name="first_name" id="first_name" placeholder="first Name" minlength="2" maxlength="20" required autocomplete="off">
+
+                <label for="last_name">last Name</label>
+                <input type="text" name="last_name" id="last_name" placeholder="last Name" minlength="2" maxlength="50" required autocomplete="off">
+
+                <label for="nickname">nickname</label>
+                <input type="text" name="nickname" id="nickname" placeholder="nickname" minlength="2" maxlength="50" required autocomplete="off">
+
+                <label for="phone_number">phone number</label>
+                <input type="text" name="phone_number" id="phone_number" placeholder="+380-()" minlength="9" maxlength="13" required autocomplete="off">
+
+                <label for="email">email</label>
+                <input type="text" name="email" id="email" placeholder="e-mail" minlength="10" maxlength="70" required autocomplete="off">
+
+                <label for="special_notes">special notes</label>
+                <textarea name="special_notes" id="special_notes" placeholder="notes" required autocomplete="off"></textarea>
+
+                <input type="submit" name="submit" value="Response">
+            </form>
+        </main>
+    </body>
+</html> 

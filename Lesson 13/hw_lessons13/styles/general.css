@@ -1,0 +1,19 @@
+@font-face {
+    font-family: ShutterBotton;
+    src: url(../fonts/shutterbottondemo.regular.ttf);
+}
+
+@font-face {
+    font-family: RibeyeMarrow;
+    src: url(../fonts/RibeyeMarrow-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mounchella;
+    src: url(../fonts/mouncella.regular.ttf);
+}
+
+body {
+    margin: 0;
+}
+  
