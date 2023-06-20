@@ -1,0 +1,43 @@
+@font-face {
+    font-family: ShutterBotton;
+    src: url(../fonts/shutterbottondemo.regular.ttf);
+}
+
+@font-face {
+    font-family: RibeyeMarrow;
+    src: url(../fonts/RibeyeMarrow-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mounchella;
+    src: url(../fonts/mouncella.regular.ttf);
+}
+
+body {
+    margin: var(--main-margin);
+    background-color: var(--main-background-color);
+}
+
+:root {
+    --main-background-color: #ebebeb;
+    --main-background: linear-gradient(180deg, #999999 0%, rgba(207, 207, 207, 0) 100%);
+    --main-filter: drop-shadow(-38px 38px 50px rgba(0, 0, 0, 0.58));
+    --main-family: Mounchella;
+    --main-radius: 67px;
+    --main-margin: 0;
+    --main-border-color: rgb(0,0,0);
+    --main-background-hover-color: rgb(240, 240, 240);
+    --main-font-size: 2em;
+}
+
+.light_theme {
+    --main-background-color: #ebebeb;
+    --main-background: linear-gradient(180deg, #999999 0%, rgba(207, 207, 207, 0) 100%);
+}
+
+.dark_theme {
+    --main-background-color: #7e7d7d;
+    --main-background: linear-gradient(180deg, #b1aeae 0%, rgba(207, 207, 207, 0) 100%);
+    --main-border-color: rgb(240,240,240);
+    --main-background-hover-color: #b1aeae;
+}

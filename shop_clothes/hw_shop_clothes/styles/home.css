@@ -7,9 +7,9 @@
 .main_photo img {
     width: 421px;
     height: 466px;
-    border: 2px solid rgb(0,0,0);
-    border-radius: 67px;
-    filter: drop-shadow(-38px 38px 50px rgba(0, 0, 0, 0.58));
+    border: 2px solid var(--main-border-color);
+    border-radius: var(--main-radius);
+    filter: var(--main-filter);
 }
 
 .main_photo img:nth-child(2) {
@@ -29,7 +29,7 @@
 }
 
 .main_text a {
-    color: rgb(0, 0, 0);
+    color: var(--main-border-color);
     text-decoration: none;
 }
 .main_text a:hover {
@@ -44,7 +44,7 @@
 .bottom_novelty div {
     height: 76px;
     width: 287px;
-    margin: 0;
+    margin: var(--main-margin);
     background: linear-gradient(180deg, rgba(66, 62, 62, 0.21) 0%, rgba(66, 62, 62, 0) 100%);
     display: flex;
     justify-content: center;
@@ -54,13 +54,13 @@
 
 .bottom_novelty div a {
     text-decoration: none;
-    font-size: 2em;
-    color: rgb(0, 0, 0);
+    font-size: var(--main-font-size);
+    color: var(--main-border-color);
 }
 
 .bottom_novelty div a:hover {
-    background: rgb(240, 240, 240);
-    border: 2px solid rgb(0, 0, 0);
+    background: var(--main-background-hover-color);
+    border: 2px solid var(--main-border-color);
     padding: 18px 90px;
     cursor: revert;
 } 
