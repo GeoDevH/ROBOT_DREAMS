@@ -1,9 +1,10 @@
 h1 {
-    font-family: Mounchella;
-    font-size: 2em;
+    font-family: var(--main-family);
+    font-size: var(--main-font-size);
     margin-top: 21px;
     margin-left: 46%;
     margin-bottom: 40px;
+    color: var(--main-border-color);
 }
 
 main {
@@ -18,7 +19,7 @@ main {
 main img {
     width: 23%;
     margin: 0 5px 5px 0;
-    border: 2px solid rgb(0,0,0);
-    border-radius: 67px;
-    filter: drop-shadow(-38px 38px 50px rgba(0, 0, 0, 0.58));
+    border: 2px solid var(--main-border-color);
+    border-radius: var(--main-radius);
+    filter: var(--main-filter);
 }

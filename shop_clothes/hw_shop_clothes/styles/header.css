@@ -32,25 +32,25 @@ nav {
     height: 122px;
     width: 100%;
     margin-top: 70px;
-    background: linear-gradient(180deg, #999999 0%, rgba(207, 207, 207, 0) 100%);
+    background: var(--main-background);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid rgb(0,0,0);
-    border-bottom: 2px solid rgb(0,0,0);
+    border-top: 2px solid var(--main-border-color);
+    border-bottom: 2px solid var(--main-border-color);
     font-family: ShutterBotton;
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: var(--main-border-color);
     text-decoration: none;
-    font-size: 2em;
+    font-size: var(--main-font-size);
     padding: 2px 102px;
 }
 
 nav a:hover {
-    background: rgb(240, 240, 240);
-    border: 2px solid rgb(0, 0, 0);
+    background: var(--main-background-hover-color);
+    border: 2px solid var(--main-border-color);
     padding: 2px 100px;
     cursor: revert;
 }
