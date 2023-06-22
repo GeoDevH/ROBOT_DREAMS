@@ -97,3 +97,20 @@ form input[type="submit"]:hover {
     background-color: rgba(340, 340, 340);
     cursor: pointer;
 }
+
+@media screen and (max-width: 1309px) {
+    main {
+        width: 50%;
+    }
+    form input, form textarea {
+        width: 400px;
+        height: 50px;
+    }
+    form input[type="submit"] {
+        margin-left: 37%;
+    }
+    main h2{
+        margin-left: 35%;
+    }
+}
+

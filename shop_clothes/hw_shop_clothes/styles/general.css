@@ -32,7 +32,6 @@ body {
 
 .light_theme {
     --main-background-color: #ebebeb;
-    --main-background: linear-gradient(180deg, #999999 0%, rgba(207, 207, 207, 0) 100%);
 }
 
 .dark_theme {
