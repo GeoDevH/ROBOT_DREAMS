@@ -23,11 +23,3 @@ main img {
     border-radius: var(--main-radius);
     filter: var(--main-filter);
 }
-
-@media screen and (max-width: 1309px) {
-    main {
-        width: 850px;
-        height: 3500px;
-        margin: 0 15%;
-    }
-}
