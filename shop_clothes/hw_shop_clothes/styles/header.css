@@ -80,6 +80,18 @@ nav button span {
 }
 
 @media screen and (max-width: 1309px) {
+    .work_address p, .work_hours p  {
+        font-size: 15px;
+    }
+    nav a {
+        font-size: 25px;
+    }
+    nav a:nth-child(2) {
+        margin: 0 130px;
+    } 
+}
+
+@media screen and (max-width: 1147px) {
     .work_hours, .work_address {
         display: none;
     }
@@ -90,3 +102,9 @@ nav button span {
         display: flex;
     }
 }
+
+/*@media screen  and (max-width: 405px) {
+    nav {
+        width: 400px;
+    }
+}*/

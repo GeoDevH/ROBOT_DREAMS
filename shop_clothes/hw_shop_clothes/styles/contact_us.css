@@ -36,7 +36,7 @@ main h1 {
 main h2 {
     margin-top: 100px;
     margin-bottom: 40px;
-    margin-left: 41%;
+    text-align: center;
     font-family: ShutterBotton;
     font-size: 25px;
     color: var(--main-border-color);
@@ -82,7 +82,8 @@ form textarea {
 }
 
 form input[type="submit"] {
-    margin-left: 43%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     margin-bottom: 200px;
     width: 170px;
@@ -98,19 +99,35 @@ form input[type="submit"]:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1309px) {
+@media screen and (max-width: 1360px) {
     main {
-        width: 50%;
+        width: 55%;
     }
     form input, form textarea {
         width: 400px;
         height: 50px;
     }
-    form input[type="submit"] {
-        margin-left: 37%;
+}
+
+
+@media screen and (max-width: 1309px) {
+    main h1 {
+        font-size: 25px;
     }
-    main h2{
-        margin-left: 35%;
+    .contact_info span, .contact_info p {
+        font-size: 20px;
+    }
+    main h2 {
+        font-size: 20px;
+    }
+    form label {
+        font-size: 20px;
+    }
+    form input[type="submit"] {
+        font-size: 20px;
+    }
+    form input::placeholder, textarea::placeholder {
+        font-size: 12px;
     }
 }
 
