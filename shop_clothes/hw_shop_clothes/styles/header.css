@@ -7,17 +7,29 @@ header {
     top: 0;
     background-color: #ffffff;
     z-index: 10;
+    /*opacity: 70%;*/
 }
 
 header img {
     height: 50px;
     width: 70px;
     margin: 10px 350px;
+    opacity: 70%;
+    transition: opacity 0.3s ease;
+}
+
+/*header:hover {
+    opacity: 100%;
+}*/
+
+header img:hover {
+    opacity: 100%;
 }
 
 .work_hours p {
     margin: 10px 0;
     font-size: 18px;
+    text-shadow: 1px 5px 10px;
 }
 
 .work_address p {
@@ -26,6 +38,7 @@ header img {
     text-align: center;
     line-height: 28px;
     font-size: 18px;
+    text-shadow: 1px 5px 10px ;
 }
  
 nav {
@@ -53,6 +66,8 @@ nav a:hover {
     border: 2px solid var(--main-border-color);
     padding: 2px 100px;
     cursor: revert;
+    transform: scale(1.1);
+    text-shadow: 5px 5px 20px;
 }
 
 nav a:nth-child(2) {
@@ -100,6 +115,9 @@ nav button span {
     }
     nav button {
         display: flex;
+    }
+    nav a:hover {
+        transform: scale(1);
     }
 }
 
