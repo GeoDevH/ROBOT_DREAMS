@@ -131,7 +131,7 @@ form input[type="submit"]:hover {
         font-size: 12px;
     }
     form input[type="submit"]:hover {
-    transform: scale(1);
+        transform: scale(1);
     }
 }
 
