@@ -24,6 +24,11 @@ main img {
     filter: var(--main-filter);
 }
 
+main img:hover {
+    transform: scale(1.5);
+    z-index: 5;
+}
+
 @media screen and (max-width: 1309px) {
     main {
         width: 850px;
@@ -44,6 +49,9 @@ main img {
         width: 900px;
         height: 5500px;
     }
+    main img:hover {
+        transform: scale(1);
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -55,5 +63,8 @@ main img {
     }
     main img {
         width: 100%
+    }
+    main img:hover {
+        transform: scale(1);
     }
 }
