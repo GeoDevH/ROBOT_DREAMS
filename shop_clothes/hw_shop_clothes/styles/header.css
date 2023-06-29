@@ -23,7 +23,17 @@ header img {
 }*/
 
 header img:hover {
-    opacity: 100%;
+    animation-name: opacity_logo;
+    animation-duration: 3s;
+}
+
+@keyframes opacity_logo {
+    0% {
+        opacity: 30%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 .work_hours p {
