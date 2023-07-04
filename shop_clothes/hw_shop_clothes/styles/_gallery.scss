@@ -1,0 +1,44 @@
+h1 {
+    font-family: var(--main-family);
+    font-size: var(--main-font-size);
+    margin-top: 21px;
+    margin-left: 46%;
+    margin-bottom: 40px;
+    color: var(--main-border-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 3100px;
+    margin: 0 auto;
+
+    img {
+        width: 23%;
+        margin: 0 5px 5px 0;
+        border: 2px solid var(--main-border-color);
+        border-radius: var(--main-radius);
+        filter: var(--main-filter);
+    
+        &:hover {
+            @include animation_scale_gallery(1s);
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    main {
+        width: 50%;
+        height: 450px;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        img {
+            width: 100%
+        }
+        &:hover {
+            transform: scale(1);
+        }
+    }
+}

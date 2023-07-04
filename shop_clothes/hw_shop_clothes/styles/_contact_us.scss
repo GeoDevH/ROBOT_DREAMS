@@ -1,0 +1,161 @@
+.contact_us {
+    main {
+        width: 1024px;
+        position: relative;
+        left: 23%;
+    }
+
+    h1 {
+        margin-left: 41%; 
+        font-family: var(--main-family);
+        color: var(--main-border-color);
+    }
+
+    h2 {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: ShutterBotton;
+        font-size: 25px;
+        color: var(--main-border-color);
+    }
+}
+
+.contact_info {
+    span {
+        font-size: 27px;
+        text-decoration: underline;
+        font-weight: bold;
+        font-family: var(--main-family);
+        color: var(--main-border-color);
+    }
+
+    p {
+        font-size: 23px;
+        font-style: italic;
+        color: var(--main-border-color);
+    }
+}
+ 
+.address_map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-border-color) !important;
+    width: 100% !important; 
+    filter: var(--main-filter);
+    margin-top: 50px;
+} 
+
+form {
+    text-align: center;
+    animation-name: form_animation;
+    animation-duration: 3s;
+
+    input, textarea {
+         &::placeholder {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 15px;
+            opacity: 0.7;
+        }
+      }
+
+    label {
+        display: block;
+        font-size: 1.7em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: ShutterBotton;
+        color: var(--main-border-color);
+    }
+
+    input {
+        width: 800px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        filter: drop-shadow(-38px 38px 50px rgba(0, 0, 0, 0.48));
+    }
+
+    textarea {
+        width: 800px;
+        height: 200px;
+        padding: 10px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        resize: none;
+        filter: drop-shadow(-38px 38px 50px rgba(0, 0, 0, 0.38));
+    }
+
+    input[type="submit"] {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        width: 170px;
+        height: 40px;
+        display: block;
+        font-family: ShutterBotton;
+        font-size: 25px;
+        filter: drop-shadow(-38px 38px 50px rgba(0, 0, 0, 0.10));
+      
+        &:hover {
+            background-color: rgba(340, 340, 340);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+      }      
+}
+
+@keyframes form_animation {
+    0% {
+        transform: scale(200%);
+        opacity: 0%
+    }
+    100% {
+        transform: scale(100%);
+        opacity: 100%
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    form {
+        input, textarea {
+          width: 400px;
+          height: 50px;
+        }
+      }
+}
+
+@media screen and (max-width: 1309px) {
+    .contact_us {
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .contact_info {
+        span, p {
+            font-size: 20px;
+        }
+    }
+    form {
+        label {
+            font-size: 20px;
+        }
+        input[type="submit"] {
+            font-size: 20px;
+        }
+        &:hover {
+            transform: scale(1);
+        }
+        input::placeholder, textarea::placeholder {
+            font-size: 12px;
+        }
+    }
+}
+
