@@ -428,7 +428,6 @@ nav button span {
   justify-content: center;
   align-items: center;
   border: 2px solid var(--main-border-color) !important;
-  width: 100% !important;
   filter: var(--main-filter);
   margin-top: 50px;
 }
