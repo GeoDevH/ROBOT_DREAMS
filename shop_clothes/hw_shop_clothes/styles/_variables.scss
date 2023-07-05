@@ -1,0 +1,37 @@
+@mixin animation_scale_home($speed) {
+    animation-name: general_photo_and_text_img_animation;
+    animation-duration: $speed;
+    transform: scale(1.1);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+    @keyframes general_photo_and_text_img_animation {
+        0% {
+            transform: scale(1.17);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@mixin animation_scale_gallery($speed) {
+    animation-name: photo_scale;
+    animation-duration: $speed;
+    transform: scale(1.5);
+    z-index: 5;
+
+    @keyframes photo_scale {
+        0% {
+            filter: brightness(75%);
+            transform: scale(2.0);
+        }
+        50% {
+            filter: brightness(25%);
+            transform: scale(1.1);
+        }
+        100% {
+            filter: unset;
+            transform: scale(1.5);
+        }
+    }
+}
