@@ -1,0 +1,135 @@
+main {
+    .section-4 {
+        .contact-us {
+            width: 364px;
+            height: 96px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 7em;
+
+            h1 {
+                font-size: 64px;
+                color: $main-third-color;
+                font-weight: bold;
+            }
+        }
+
+        .form-icon {
+            width: 788px;
+            height: 266px;
+            margin-top: 6em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: auto;
+            margin-right: auto;
+            
+            .input {
+                text-align: center;
+
+                input {
+                    width: 374px;
+                    height: 70px;
+                    border-radius: 45px;
+                    margin-bottom: 1em;
+                    background-color: #9FDEA9;
+                    color: $main-secondary-color;
+
+                    &::placeholder {
+                        color: $main-secondary-color;
+                    }
+
+                    &:hover {
+                    background-color: $main-fourth-color;
+                    }
+                }
+
+                .send-button {
+                    button {
+                        width: 180px;
+                        height: 70px;
+                        border: solid;
+                        border-radius: 45px;
+                        background-color: $main-secondary-color;
+                        border-color: #48924F;
+                        color: #4DB96B;
+
+                        &:hover {
+                            background-color: $main-first-color;
+                            color: $main-secondary-color;
+                        }
+
+                        &:active {
+                            background-color: $main-fourth-color;
+                        }
+                    }
+                }
+            }
+
+            .icon {
+                width: 400px;
+                height: 132px;
+                font-size: 1em;
+                padding: 43px 0 0 100px;
+
+                p {
+                    font-size: 12px;
+                    margin-bottom: 2.5em;
+                    padding-left: 20px;
+                }
+
+                .e-mail {
+                    @include icon_style;
+                }
+
+                .phone {
+                    @include icon_style;
+                }
+
+                .address {
+                    @include icon_style;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        .section-4 {
+            .contact-us {
+                h1 {
+                    font-size: $main-media-size;
+                    margin-left: 54px;
+                }
+            }
+            .form-icon {
+                width: 100%;
+                grid-template-columns: none;
+                justify-items: center;
+                .icon {
+                    p {
+                        color: $main-secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        .section-4 {
+            .form-icon {
+                .input {
+                    input {
+                        width: 320px;
+                    }
+                }
+                .icon {
+                    width: 377px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+main {
+    .section-2 {
+        .main-background {
+            background-image: url(../assets/main-photo.png);
+            width: $main-size;
+            height: 732px;
+            position: relative;
+            top: 100px;
+            @include flex_position;
+
+            .card {
+                width: 360px;
+                height: 408px;
+                font-size: 16px;
+                text-align: center;
+                background: none;
+                border: none;
+                color: $main-secondary-color;
+
+                &:nth-child(2) {
+                    margin: 0 40px;
+                }
+            }
+        }
+
+        .button-help-me-main-section-2 {
+            @include flex_position;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            bottom: 20px;
+            margin-bottom: 100px;
+
+            button {
+                background-color: $main-secondary-color;
+                color: $main-first-color;
+                border-color: $main-secondary-color; 
+                font-weight: bold;
+                width: 180px;
+                height: 70px;
+                border-radius: 35px;
+
+                &:hover {
+                    background-color: $main-first-color;
+                    color: $main-secondary-color;
+                    border-color: $main-secondary-color;
+                }
+
+                &:active {
+                    background-color: $main-fourth-color;
+                    border-color: $main-third-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        .section-2 {
+            .main-background {
+                height: 1024px;
+                flex-direction: column;
+                background-repeat: round;
+                .card {
+                    width: 460px;
+                    height: 408px;
+                    font-size: 14px;
+                    top: 2em;
+                    &:nth-child(2) {
+                        top: -50px;
+                    }
+                    &:nth-child(3) {
+                        top: -110px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        .section-2 {
+            .main-background {
+                .card {
+                    width: 317px;
+                    height: 408px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

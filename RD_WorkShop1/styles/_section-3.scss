@@ -1,0 +1,115 @@
+main {
+    .section-3 {
+        .title {
+            width: 284px;
+            height: 96px;
+            position: relative;
+            left: 47%;
+            transform: translate(-50%, -50%);
+
+            h1 {
+                font-size: 64px;
+                color: $main-third-color;
+                font-weight: bold;
+            }
+        }
+
+        .main-testymonials {
+            .container-general {
+                margin: 0 auto;
+                max-width: 1199px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                
+                .container-testymonials {
+                    width: 577px;
+                    height: 233px;
+                    border-radius: 40px;
+                    background: url(../assets/women-photo.png) no-repeat;
+                    background-position: 30px 30px;
+                    background-color: $main-secondary-color;
+                    margin-bottom: 30px;
+                    border: 1px solid $main-first-color;
+
+                    .inner-block {
+                        width: $main-size;
+                        height: $main-size;
+                        border-radius: 40px;
+                        padding: 10px;
+
+                        .card {
+                            margin-left: 124px;
+                            border: none;
+                        
+                            h3 {
+                                padding: 1em 0 0;
+                                color: $main-fourth-color;
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+                        
+                            p {
+                                width: 423px;
+                                margin-top: 10px;
+                                color: $main-first-color;
+                                font-size: 14px;
+                            }
+                        
+                            .star {
+                                width: 114px;
+                                height: 18px;
+                                background: url(../assets/star-photo.png) no-repeat;
+                            }
+                        }
+                    }
+                }
+            }       
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        .section-3 {
+            .title {
+                h1 {
+                    margin-left: 1em;
+                    font-size: $main-media-size;
+                }
+            }
+            .main-testymonials {
+                .container-general {
+                    grid-template-columns: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        .section-3 {
+            .title {
+                h1 {
+                    margin-left: 5px;
+                }
+            }
+            .main-testymonials {
+                .container-general {
+                    .container-testymonials {
+                        width: 350px;
+                        height: 367px;
+                        .inner-block {
+                            .card {
+                                p {
+                                    width: 188px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
