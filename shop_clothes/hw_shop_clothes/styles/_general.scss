@@ -16,6 +16,15 @@
 body {
     margin: var(--main-margin);
     background-color: var(--main-background-color);
+    margin: 0;
+    font-family: initial;
+    font-size: initial;
+    font-weight: initial;
+    line-height: initial;
+    color: initial;
+    text-align: initial;
+    -webkit-text-size-adjust: initial;
+    -webkit-tap-highlight-color: initial;
 }
 
 :root {

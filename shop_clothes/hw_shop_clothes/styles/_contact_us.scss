@@ -6,6 +6,7 @@
     }
 
     h1 {
+        margin-top: 2.4%;
         margin-left: 41%; 
         font-family: var(--main-family);
         color: var(--main-border-color);
@@ -34,6 +35,9 @@
         font-size: 23px;
         font-style: italic;
         color: var(--main-border-color);
+    }
+    .fa-solid {
+        margin-right: 9px;
     }
 }
  
@@ -70,8 +74,8 @@ form {
     }
 
     input {
-        width: 800px;
-        height: 30px;
+        width: 628px;
+        height: 59px;
         padding: 5px;
         border-radius: 10px;
         margin-bottom: 20px;
@@ -105,7 +109,7 @@ form {
             cursor: pointer;
             transform: scale(1.1);
         }
-      }      
+      }     
 }
 
 @keyframes form_animation {
@@ -120,18 +124,33 @@ form {
 }
 
 @media screen and (max-width: 1360px) {
-    form {
-        input, textarea {
-          width: 400px;
-          height: 50px;
+    .contact_us {
+        main {
+            h1 {
+                text-align: center;
+                margin-left: unset;
+            }
+            .contact_info {
+                width: 100%;
+                text-align: center;
+            }
+            .address_map {
+                display: none;
+            }
+            form {
+                input, textarea {
+                width: 400px;
+                height: 50px;
+                }
+            }
         }
-      }
+    }
 }
 
 @media screen and (max-width: 1309px) {
     .contact_us {
         h1 {
-            font-size: 25px;
+            font-size: 30px;
         }
         h2 {
             font-size: 20px;

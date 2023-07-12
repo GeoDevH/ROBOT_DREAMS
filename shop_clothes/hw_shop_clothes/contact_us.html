@@ -3,11 +3,13 @@
     <head>
         <title>Shop_clothes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link href="build/styles.css" rel="stylesheet" type="text/css">
         <link href="img/logo.ico.png" rel="icon" type="image/x-icon">
     </head>
     <body class="light_theme">
-        <header>
+        <header class="contact_us_header">
             <div class="work_hours">
                 <p>Mon-Fri: 08:00 - 20:00</p>
                 <p>Sat-Sun: 09:00 - 16:00</p>
@@ -32,10 +34,12 @@
                 <h1>Contact us</h1>
                 <div class="contact_info">
                     <div class="contact_phone">
+                        <i class="fa-solid fa-phone" style="color: #221f51;"></i>
                         <span>Phone:</span>
                         <p>+38-(093)-111-111</p>
                     </div>
                     <div class="contact_address">
+                        <i class="fa-solid fa-location-dot" style="color: #221f51;"></i>
                         <span>Address:</span>
                         <p>St. 17 Antonovycha St., Kyiv, Ukraine 02000</p>
                     </div>
@@ -46,27 +50,30 @@
 
                 <h2>LeAVe A ReVIeW</h2>
                 <form>
-                    <label for="first_name">first Name</label>
-                    <input type="text" name="first_name" id="first_name" placeholder="first Name" minlength="2" maxlength="20" required autocomplete="off">
+                    <div class="mb-3" >    
+                        <label for="first_name">first Name</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="first Name" minlength="2" maxlength="20" required autocomplete="off">
 
-                    <label for="last_name">last Name</label>
-                    <input type="text" name="last_name" id="last_name" placeholder="last Name" minlength="2" maxlength="50" required autocomplete="off">
+                        <label for="last_name">last Name</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="last Name" minlength="2" maxlength="50" required autocomplete="off">
 
-                    <label for="nickname">nickname</label>
-                    <input type="text" name="nickname" id="nickname" placeholder="nickname" minlength="2" maxlength="50" required autocomplete="off">
+                        <label for="nickname">nickname</label>
+                        <input type="text" name="nickname" id="nickname" placeholder="nickname" minlength="2" maxlength="50" required autocomplete="off">
 
-                    <label for="phone_number">phone number</label>
-                    <input type="text" name="phone_number" id="phone_number" placeholder="+380-()" minlength="9" maxlength="13" required autocomplete="off">
+                        <label for="phone_number">phone number</label>
+                        <input type="text" name="phone_number" id="phone_number" placeholder="+380-()" minlength="9" maxlength="13" required autocomplete="off">
 
-                    <label for="email">email</label>
-                    <input type="text" name="email" id="email" placeholder="e-mail" minlength="10" maxlength="70" required autocomplete="off">
+                        <label for="email">email</label>
+                        <input type="text" name="email" id="email" placeholder="e-mail" minlength="10" maxlength="70" required autocomplete="off">
 
-                    <label for="special_notes">special notes</label>
-                    <textarea name="special_notes" id="special_notes" placeholder="notes" required autocomplete="off"></textarea>
-
-                    <input type="submit" name="submit" value="Response">
+                        <label for="special_notes">special notes</label>
+                        <textarea name="special_notes" id="special_notes" placeholder="notes" required autocomplete="off"></textarea>
+                        
+                        <input type="submit" name="submit" value="Response">
+                    </div>
                 </form>
             </main>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
 </html> 
