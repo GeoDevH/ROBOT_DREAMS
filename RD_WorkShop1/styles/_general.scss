@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Popins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@mixin flex_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absolute_position {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin icon_style {
+    display: flex;
+    .fa-solid {
+    color: $main-fifth-color;
+    }
+}
+
+$main-first-color: #48924F;
+$main-secondary-color: #FFFFFF;
+$main-third-color: #808080;
+$main-fourth-color: #00b300; 
+$main-fifth-color: #45af28;
+$main-size: 100%;
+$main-media-size: 45px;
+ 
+body {
+    font-family: Popins;
+}
+
+footer {
+    .block {
+        margin-top: 100px;
+        width: $main-size;
+        height: 145px;
+        background-color: #324B29;
+    }
+}
