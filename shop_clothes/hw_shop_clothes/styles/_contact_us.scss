@@ -1,11 +1,13 @@
 .contact_us {
     main {
         width: 1024px;
-        position: relative;
-        left: 23%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
     }
 
     h1 {
+        margin-top: 2.4%;
         margin-left: 41%; 
         font-family: var(--main-family);
         color: var(--main-border-color);
@@ -35,6 +37,9 @@
         font-style: italic;
         color: var(--main-border-color);
     }
+    .fa-solid {
+        margin-right: 9px;
+    }
 }
  
 .address_map {
@@ -50,6 +55,7 @@ form {
     text-align: center;
     animation-name: form_animation;
     animation-duration: 3s;
+    margin: 60px;
 
     input, textarea {
          &::placeholder {
@@ -70,8 +76,8 @@ form {
     }
 
     input {
-        width: 800px;
-        height: 30px;
+        width: 628px;
+        height: 59px;
         padding: 5px;
         border-radius: 10px;
         margin-bottom: 20px;
@@ -105,7 +111,38 @@ form {
             cursor: pointer;
             transform: scale(1.1);
         }
-      }      
+      }
+    
+    .my-own-style-form {
+        border-radius: 25px;
+        &:focus {
+            border-color: grey;
+            box-shadow: 0px 0px 0px 7px rgba(138, 222, 152, 0.29);
+        }
+    }
+
+    .my-own-style-button {
+        width: 20%;
+        height: 60px;
+        border-radius: 22px;
+        font-size: 23px;
+        background-color: #e6e6e6;
+        color: black;
+        border-color: black;
+        margin-top: 30px;
+        &:hover {
+            background-color: white;
+            color: black;
+            border-color: black;
+            box-shadow: 0px 0px 0px 7px rgba(138, 222, 152, 0.29);
+            &:active {
+                background-color: aquamarine;
+                border-color: black;
+                color: black;
+            }
+        }
+    }
+    
 }
 
 @keyframes form_animation {
@@ -120,18 +157,27 @@ form {
 }
 
 @media screen and (max-width: 1360px) {
-    form {
-        input, textarea {
-          width: 400px;
-          height: 50px;
+    .contact_us {
+        main {
+            h1 {
+                text-align: center;
+                margin-left: unset;
+            }
+            .contact_info {
+                width: 100%;
+                text-align: center;
+            }
+            .address_map {
+                display: none;
+            }
         }
-      }
+    }
 }
 
 @media screen and (max-width: 1309px) {
     .contact_us {
         h1 {
-            font-size: 25px;
+            font-size: 30px;
         }
         h2 {
             font-size: 20px;
@@ -140,20 +186,6 @@ form {
     .contact_info {
         span, p {
             font-size: 20px;
-        }
-    }
-    form {
-        label {
-            font-size: 20px;
-        }
-        input[type="submit"] {
-            font-size: 20px;
-        }
-        &:hover {
-            transform: scale(1);
-        }
-        input::placeholder, textarea::placeholder {
-            font-size: 12px;
         }
     }
 }
