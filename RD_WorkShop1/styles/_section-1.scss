@@ -1,0 +1,160 @@
+main {
+    .section-1 {
+        .main-h1 {
+            width: 284px;
+            height: 96px;
+            @include absolute_position;
+
+            h1 {
+                margin-bottom: -36px;
+                font-size: 64px;
+                color: $main-third-color;
+                font-weight: bold;
+            }
+
+            img {
+                position: relative;
+                right: 5%;
+                width: 109px;
+                height: 94px;
+            }
+        }
+
+        .main-card {
+            @include flex_position;
+
+            .card {
+                width: 385px;
+                height: 504px;
+                border: none;
+                border-radius: 2em;
+                box-shadow: 0px 0px 15px $main-third-color;
+
+                &:nth-child(2) {
+                    margin: 100px 22px;
+                }
+
+                .card-body {
+                    color: #0D4D14;
+
+                    h4 {
+                        margin-top: 24px;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        margin-top: 20px;
+                        font-size: 14px;
+                    }
+                }
+            } 
+        }
+
+        .button-help-me-main-section-1 {
+            @include flex_position;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            bottom: 20px;
+            margin-bottom: 100px;
+
+            button {
+                background-color: $main-secondary-color;
+                color: $main-first-color;
+                border-color: $main-secondary-color; 
+                font-weight: bold;
+                width: 180px;
+                height: 70px;
+                border-radius: 35px;
+                box-shadow: 3px 21px 54px 2px #e6ffe6;
+
+                &:hover {
+                    background-color: $main-first-color;
+                    color: $main-secondary-color;
+                    border-color: $main-secondary-color;
+                }
+
+                &:active {
+                    background-color: $main-fourth-color;
+                    border-color: $main-third-color;
+                }
+            }
+        }
+
+        .main-h1-about {
+            width: 298px;
+            height: 96px;
+            @include absolute_position;
+
+            h1 {
+                margin-bottom: -36px;
+                font-size: 4em;
+                color: $main-third-color;
+                font-weight: bold;
+            }
+
+            img {
+                position: relative;
+                left: 81%;
+                width: 109px;
+                height: 94px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    main {
+        .section-1 {
+            .main-card {
+                .card {
+                    height: 478px;
+                    width: 331px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) { 
+    main {
+        .section-1 {
+            .main-h1 {
+                margin-left: 50px;
+                h1 {
+                    font-size: $main-media-size;
+                }
+                img {
+                    width: 87px;
+                    margin-top: 3px;
+                }   
+            }
+            .main-card {
+                flex-direction: column;
+                .card {
+                    height: 462px;
+                    width: 288px;
+                    top: 70px;
+                &:nth-child(2) {
+                    top: 0px;
+                }
+                &:nth-child(3) {
+                    top: -67px;
+                }
+                }
+            }
+            .main-h1-about {
+                h1 {
+                    font-size: $main-media-size;
+                    margin-left: 54px;
+                }
+                img {
+                    width: 87px;
+                    margin-left: -20px;
+                } 
+            }
+        }
+    }
+}
