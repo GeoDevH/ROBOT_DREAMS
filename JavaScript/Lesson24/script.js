@@ -2,7 +2,7 @@ console.log('hello world!');
 
 function task1() {
 
-  console.log('_____Task1_____')
+  console.log('_____Task1_____');
   let a, b;
 
   function enter() {
@@ -80,7 +80,7 @@ function task1() {
 
 function task2 () {
 
-  console.log('_____Task2_____')
+  console.log('_____Task2_____');
 
   let random_array = [5, 1, 8, 31, 63, 15, 7, 22, 9, 2]; 
   console.log(random_array);
@@ -126,6 +126,6 @@ function select_home_task () {
     console.log('Error! Incorrect name task');
     select_home_task();
   }
-  }
+}
   
 select_home_task();
