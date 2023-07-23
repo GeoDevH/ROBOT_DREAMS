@@ -19,7 +19,7 @@ console.log('_____Task2_____');
 let user = {
   name: "Heorhii",
   age: "25",
-  sayHello: function () {
+  sayHello: function() {
     console.log("Hello, I'm " + this.name + ", I'm " + this.age + " years old");
   },
 };
@@ -31,14 +31,14 @@ console.log('_____Task3_____');
 let my_calculator = {
   a: 0,
   b: 0,
-  ask: function () {
+  ask: function() {
     this.a = +prompt('Enter first number: ');
     this.b = +prompt('Enter second number: ');
   },
-  sum: function () {
+  sum: function() {
     return this.a + this.b;
   },
-  mul: function () {
+  mul: function() {
     return this.a * this.b;
   },
 };
