@@ -28,9 +28,9 @@ CancelableAccumulator.prototype.clear = function() {
   console.log('___ Accumulator canceled ___ \n\nCleared: ' + this.digit);
 }
 
-let start_function = new CancelableAccumulator();
-start_function.digit_increment();
-start_function.digit_increment();
-start_function.digit_decrement();
-start_function.clear();
-start_function.digit_decrement();
+let startFunction = new CancelableAccumulator();
+startFunction.digit_increment();
+startFunction.digit_increment();
+startFunction.digit_decrement();
+startFunction.clear();
+startFunction.digit_decrement();
