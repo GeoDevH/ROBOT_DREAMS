@@ -1,0 +1,87 @@
+h1 {
+    font-family: var(--main-family);
+    font-size: var(--main-font-size);
+    margin-top: 21px;
+    margin-left: 46%;
+    margin-bottom: 40px;
+    color: var(--main-border-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 3100px;
+    margin: 0 auto;
+}
+
+main img {
+    width: 23%;
+    margin: 0 5px 5px 0;
+    border: 2px solid var(--main-border-color);
+    border-radius: var(--main-radius);
+    filter: var(--main-filter);
+}
+
+main img:hover {
+    animation-name: photo_scale;
+    animation-duration: 1s;
+    transform: scale(1.5);
+    z-index: 5;
+}
+
+@keyframes photo_scale {
+    0% {
+        filter: brightness(75%);
+        transform: scale(2.0);
+    }
+    50% {
+        filter: brightness(25%);
+        transform: scale(1.1);
+    }
+    100% {
+        filter: unset;
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 1309px) {
+    main {
+        width: 850px;
+        height: 3500px;
+        margin: 0 15%;
+    }
+}
+
+@media screen and (max-width: 1147px) {
+    main {
+        width: 800px;
+        height: 3300px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    main {
+        width: 900px;
+        height: 5500px;
+    }
+    main img:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        width: 50%;
+        height: 450px;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+    main img {
+        width: 100%
+    }
+    main img:hover {
+        transform: scale(1);
+    }
+}
