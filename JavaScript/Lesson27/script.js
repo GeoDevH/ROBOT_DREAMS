@@ -59,6 +59,20 @@ function task1() {
     return a / b;
   }
 
+  function getColorWithOpacity(value) {
+    if (value < 0) {
+      return 0.3; 
+    } else if (value > 10000) {
+        return 1; 
+    } else if (value > 1000) {
+        return 0.7 + (value - 1000) / 9000 * 0.3; 
+    } else if (value > 100) {
+        return 0.5 + (value - 100) / 900 * 0.2; 
+    } else {
+        return 0.3 + value / 700 * 0.2; 
+    }
+  }
+
   function showResults(a, b) {
     let resultSum = sum(a, b);
     let resultDiff = diff(a, b);
@@ -67,27 +81,13 @@ function task1() {
 
     if (typeof resultDiv !== 'undefined') {
 
-      function getColorWithOpacity(value) {
-        if (value < 0) {
-          return 0.3; 
-        } else if (value > 10000) {
-            return 1; 
-        } else if (value > 1000) {
-            return 0.7 + (value - 1000) / 9000 * 0.3; 
-        } else if (value > 100) {
-            return 0.5 + (value - 100) / 900 * 0.2; 
-        } else {
-            return 0.3 + value / 700 * 0.2; 
-        }
-      }
-
       function updateElement(id, label, value) {
         let element = document.getElementById(id);
         let positiveValue;
         if (value >= 0) {
-            positiveValue = "";
+            positiveValue = '';
         } else {
-            positiveValue = "-vid";
+            positiveValue = '-vid';
         }
         //let positiveValue = value >= 0 ? "" : "-vid";
         let opacity = getColorWithOpacity(value);
