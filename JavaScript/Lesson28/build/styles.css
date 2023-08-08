@@ -175,7 +175,7 @@ nav button span {
   border-radius: var(--main-radius);
   filter: var(--main-filter);
 }
-.general_photo_and_text img:hover {
+.general_photo_and_text img.animation_zoom {
   animation-name: general_photo_and_text_img_animation;
   animation-duration: 1.5s;
   transform: scale(1.1);
@@ -356,7 +356,7 @@ nav button span {
   border-radius: var(--main-radius);
   filter: var(--main-filter);
 }
-.main_class main img:hover {
+.main_class main img.animation_zoom {
   animation-name: photo_scale;
   animation-duration: 1s;
   transform: scale(1.5);
