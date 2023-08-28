@@ -15,9 +15,7 @@ console.log(squaredArray);
 //part2
 function defer(fn, delay) {
     return function() {
-        setTimeout(() => {
-        fn.apply(this, arguments);
-        }, delay);
+        setTimeout(() => {fn.apply(this, arguments);}, delay);
     };
 }
 
