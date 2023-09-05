@@ -1,0 +1,87 @@
+body {
+    background: url(films/Backgorund-photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-settings {
+    font-size: 3em;
+    text-align: center;
+    color: blanchedalmond;
+    letter-spacing: 10px;
+}
+
+.row-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.card-settings {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border: 2px solid yellow;
+    margin: 10px 10px;
+    transition: background-color 0.5s;
+    box-shadow: 0px 0px 50px blue;
+}
+
+.card-settings:hover {
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 50px yellow;
+}
+
+.card-settings img {
+    position: absolute;
+    width: 195px;
+    height: 295px;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.card-overlay {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    background-color: antiquewhite;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1.5em;
+    color: brown;
+    cursor: pointer;
+}
+
+.card-settings:hover .card-overlay {
+    opacity: 0.8;
+    font-size: 1.5em;
+}
+
+.card-db {
+    text-align: center;
+}
+
+.card-db a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-db a:hover {
+    text-decoration: underline;
+}
+
+.card-db a:active {
+    color: chocolate;
+}
