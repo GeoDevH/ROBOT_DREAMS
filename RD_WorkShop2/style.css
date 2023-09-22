@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(29, 26, 26);
+    color: rgba(204, 204, 189, 0.911);
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgb(238, 159, 14);
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.user-email, .user-gender, .user-status, .post-body, .post-empty {
+    font-size: 1.4em;
+}
+
+.post-empty {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.general-card {
+    border: 2px solid black;
+    border-radius: 10% 0;
+    box-shadow: 0px 0px 20px rgba(47, 0, 255, 0.781);
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(223, 107, 18, 0.932);
+    overflow-wrap: break-word;
+}
+
+.general-card div {
+    margin: 10px 10px;
+}
+
+.general-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px rgba(238, 255, 0, 0.856);
+}
+
+.general-card:active {
+    background-color: rgba(255, 136, 0, 0.938);
+}
+
+.post-card {
+    border: 2px solid black;
+    border-radius: 10% 0;
+    box-shadow: 0px 0px 20px rgba(47, 0, 255, 0.781);
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    text-shadow: 2px 2px 4px rgba(223, 107, 18, 0.932);
+    overflow-wrap: break-word;
+}
+
+.back-btn {
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    background-color: rgb(22, 22, 201);
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px rgba(47, 0, 255, 0.781);
+}
+
+.back-btn:hover {
+    background-color: rgb(14, 14, 216);
+}
+
+.back-btn:active {
+    background-color: rgb(9, 9, 139);
+}
