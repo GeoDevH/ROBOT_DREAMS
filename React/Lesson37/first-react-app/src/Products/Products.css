@@ -1,0 +1,28 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 20px; 
+  }
+  
+  .product-item {
+    width: 18em;
+    margin: 80px 58px; 
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 150px; 
+    height: 204px;
+    object-fit: cover;
+  }
