@@ -3,6 +3,7 @@ import { Calendar, momentLocalizer } from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
 import Modal from 'react-modal';
+import './Calendar.css'
 
 const MyCalendar = () => {
   const localizer = momentLocalizer(moment);
@@ -65,7 +66,7 @@ const MyCalendar = () => {
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 400 }}
+        className="calendar-style"
         onSelectEvent={handleEventClick}
         selectable
         onSelectSlot={handleDateSelect}

@@ -25,7 +25,6 @@ const Navigation = () => {
         }
     };
     
-
     const handleDeleteCard = (cardId) => {
         setCards((prevCards) => prevCards.filter((card) => card.id !== cardId));
     };
@@ -35,7 +34,6 @@ const Navigation = () => {
         setCards([]);
     };
 
-    
     return (
         <div className={`${isSidebarOpen ? 'open' : ''}`}>
             <button className="menu-button" onClick={toggleSidebar}>

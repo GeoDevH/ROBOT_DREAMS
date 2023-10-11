@@ -3,8 +3,8 @@ import './About.css'
 
 const About = () => {
   return (
-    <div className="container text-center mt-5">
-      <div className="card" style={{ backgroundColor: '#cae0ed' }}>
+    <div className="container text-center mt-5 container-style">
+      <div className="card card-style">
         <div className="card-body">
           <h1 className="card-title">About project</h1>
           <p className="card-text">
