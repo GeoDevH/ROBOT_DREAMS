@@ -1,0 +1,14 @@
+.card-setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content {
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}

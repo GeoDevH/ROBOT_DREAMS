@@ -1,0 +1,22 @@
+.add-task {
+    scale: 0.8;
+}
+
+.btn-form {
+    display: flex;
+    scale: 0.7;
+}
+
+.form-check-input-style {
+    scale: 1.5;
+}
+
+.form-check-label-style {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.task-title.completed {
+    text-decoration: line-through;
+}
