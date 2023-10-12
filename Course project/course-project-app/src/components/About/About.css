@@ -1,0 +1,15 @@
+.container-style .card-style {
+    background: #cae0ed;
+}
+
+.card-title {
+     font-size: 1.8em; 
+}
+
+.card-text {
+    font-size: 1.2em;
+}
+
+.author {
+    font-weight: bold;
+}
